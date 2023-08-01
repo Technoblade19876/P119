@@ -50,4 +50,37 @@ function gotResult(error, results){
         prediction2 = results[1].label;
         speak();
     }
+
+    if (results[0].label == "OK"){
+        document.getElementById("update_emoji").innerHTML = "👌"
+    }
+
+    if (results[0].label == "FIVE"){
+        document.getElementById("update_emoji").innerHTML = "🖐️"
+    }
+
+    if (results[0].label == "THREE"){
+        document.getElementById("update_emoji").innerHTML = "&#128406;"
+    }
+
+    if (results[0].label == "TWO"){
+        document.getElementById("update_emoji").innerHTML = "✌️"
+    }
+
+    if (results[1].label == "OK"){
+        document.getElementById("update_emoji2").innerHTML = "👌"
+    }
+
+    if (results[1].label == "FIVE"){
+        document.getElementById("update_emoji2").innerHTML = "🖐️"
+    }
+
+    if (results[1].label == "THREE"){
+        document.getElementById("update_emoji2").innerHTML = "&#128406;"
+    }
+
+    if (results[1].label == "TWO"){
+        document.getElementById("update_emoji2").innerHTML = "✌️"
+    }
+
     }
